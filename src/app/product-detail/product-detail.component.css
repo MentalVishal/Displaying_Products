@@ -1,0 +1,33 @@
+/* product-detail.component.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  /* border: 2px solid blue; */
+}
+
+.product-details {
+  text-align: center;
+  justify-content: center;
+}
+
+.product-image {
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.loading-message,
+.error-message {
+  text-align: center;
+  margin-top: 20px;
+  color: #ff6347; /* Tomato color for error messages */
+}

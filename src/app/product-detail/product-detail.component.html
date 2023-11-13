@@ -1,0 +1,17 @@
+<!-- product-detail.component.html -->
+
+<div class="container" *ngIf="loading">
+  <h1 class="loading-message">Loading product details...</h1>
+</div>
+
+<div class="container" *ngIf="product">
+  <h2 class="product-details">{{ product.title }}</h2>
+  <p class="product-details">Description: {{ product.description }}</p>
+  <p class="product-details">Price: ${{ product.price }}</p>
+  <img [src]="product.image" alt="{{ product.title }}" class="product-image" />
+  <!-- Add more details based on your product data -->
+</div>
+
+<div class="container" *ngIf="error">
+  <h1 class="error-message">{{ error }}</h1>
+</div>
